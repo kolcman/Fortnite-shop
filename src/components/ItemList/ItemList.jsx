@@ -1,5 +1,6 @@
 import styles from "./ItemList.module.css";
 import ItemCard from "../ItemCard/ItemCard";
+import { CartProvider } from "../../context/CartContext";
 
 export default function ItemList(props) {
   const { addItemToCart, items = [] } = props;

@@ -1,3 +1,4 @@
+import { useCart } from "../../context/CartContext";
 import styles from "./ItemCard.module.css";
 
 export default function ItemCard(props) {
@@ -7,8 +8,9 @@ export default function ItemCard(props) {
     displayDescription: description,
     price: { finalPrice: price } = {},
     displayAssets = [],
-    addItemToCart,
   } = props;
+
+  const { addItemToCart } = useCart();
 
   const image = displayAssets[0]?.full_background || "";
 

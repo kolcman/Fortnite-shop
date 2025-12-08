@@ -1,0 +1,56 @@
+.card {
+  max-width: 250px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid yellow;
+  background-color: rgb(15, 15, 15);
+}
+
+.card__image {
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+  flex: 1;
+}
+
+.card__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.card__title {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: yellow;
+}
+
+.card__coin {
+  color: white;
+}
+
+.card__btn {
+  display: flex;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: yellow;
+  color: black;
+  transition: all 0.3ms ease-in;
+}
+
+.card__btn:hover {
+  background-color: rgb(15, 15, 15);
+  border: 1px solid yellow;
+  color: yellow;
+}

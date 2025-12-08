@@ -1,3 +1,4 @@
+import styles from "./ItemList.module.css";
 import ItemCard from "../ItemCard/ItemCard";
 
 export default function ItemList(props) {
@@ -8,7 +9,7 @@ export default function ItemList(props) {
   }
 
   return (
-    <div className="items">
+    <div className={`${styles.items}`}>
       {items.map((item) => (
         <ItemCard key={item.id} {...item} />
       ))}

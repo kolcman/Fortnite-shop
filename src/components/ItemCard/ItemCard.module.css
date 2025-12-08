@@ -1,5 +1,7 @@
 .card {
-  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
   height: auto;
   overflow: hidden;
   border-radius: 8px;
@@ -18,13 +20,20 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+  gap: 10px;
 }
 
 .card__title {
   padding: 0;
   margin: 0;
   font-weight: bold;
+  font-size: 16px;
+}
+
+.card__description {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
 }
 
 .card__control {
@@ -46,7 +55,7 @@
   border-radius: 4px;
   background-color: yellow;
   color: black;
-  transition: all 0.3ms ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .card__btn:hover {

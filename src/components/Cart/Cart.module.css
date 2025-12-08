@@ -1,0 +1,26 @@
+.cart {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  color: black;
+  cursor: pointer;
+  z-index: 2;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: yellow;
+  transition: all 0.3s ease-in;
+}
+
+.cart:hover {
+  background-color: rgb(192, 192, 0);
+}
+
+@media (min-width: 767px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+}
+
+.cart__quantity {
+}

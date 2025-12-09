@@ -1,0 +1,14 @@
+.cartItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cartItem__img {
+  width: 100px;
+  height: auto;
+}

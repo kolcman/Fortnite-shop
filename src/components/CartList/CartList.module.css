@@ -1,0 +1,25 @@
+.cartList {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  border: 1px solid yellow;
+  background-color: black;
+}
+
+.cartList__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  list-style: none;
+  gap: 5px;
+}
+
+.cartList__total {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 5px;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+  padding: 10px;
+}

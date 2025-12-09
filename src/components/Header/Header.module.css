@@ -4,8 +4,11 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 1.5rem;
-  height: 76px;
+  height: 70px;
   background-color: black;
   border-bottom: 2px solid rgb(58, 58, 58);
 }

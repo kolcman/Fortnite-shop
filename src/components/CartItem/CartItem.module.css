@@ -35,6 +35,13 @@
   background-color: var(--btn);
   border: none;
   border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.cartItem__btn:hover,
+.cartItem__btn:focus,
+.cartItem__btn:focus-visible {
+  background-color: var(--btn-hover);
 }
 
 .cartItem__quantity {

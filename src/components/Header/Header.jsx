@@ -8,8 +8,12 @@ export default function Header() {
 
   return (
     <div className={`${styles.header}`}>
-      <a href="#" className="brand-logo">
-        Fortnite shop
+      <a href="#">
+        <img
+          className={`${styles.header__logo}`}
+          src="/src/assets/Epic_Games_logo.svg"
+          alt="Логотип Epic Games"
+        />
       </a>
       {isOpen ? <CartList /> : null}
       <Cart quantity={order.length} />

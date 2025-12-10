@@ -2,24 +2,54 @@
   position: absolute;
   top: 70px;
   right: 0;
-  border: 1px solid yellow;
-  background-color: black;
+  background-color: var(--bg-secondary09);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
 }
 
 .cartList__list {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  min-width: 560px;
+  padding: 10px 10px;
   list-style: none;
   gap: 5px;
 }
 
-.cartList__total {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+.cartList__bottom {
+  display: flex;
   gap: 5px;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgb(65, 65, 65);
   padding: 10px;
+}
+
+.cartList__total {
+  display: flex;
+  gap: 5px;
+}
+
+.cartList__value {
+  color: var(--btn);
+  font-weight: 700;
+}
+
+.cartList__btn {
+  display: flex;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: var(--btn);
+  color: black;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.cartList__btn:hover,
+.cartList__btn:focus-visible,
+.cartList__btn:focus {
+  background: linear-gradient(135deg, var(--btn) 0%, var(--btn-hover) 100%);
+  transform: translateY(-2px);
+  border-color: #333;
 }

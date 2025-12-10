@@ -3,9 +3,21 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --bg-primary: #042b6b;
+  --bg-secondary: #0b172b;
+  --bg-secondary09: rgba(11, 23, 43, 0.9);
+
+  --text-primary: #ffffff;
+
+  --accent-primary: #6a008d;
+  --accent-secondary: #004058;
+  --accent-success: #336900;
+  --accent-rare: #18ad9b;
+
+  --border-color: #2a2a2a;
+
+  --btn: #ffcc33;
+  --btn-hover: #ffee00;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

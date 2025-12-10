@@ -5,15 +5,15 @@
   height: auto;
   overflow: hidden;
   border-radius: 8px;
-  background-color: rgb(15, 15, 15);
-  border: 1px solid transparent;
+  background-color: var(--bg-secondary);
+  border: 4px solid var(--border-color);
   transition: all 0.3s ease-in;
 }
 
 .card:hover,
 .card:focus-visible {
-  border: 1px solid yellow;
-  box-shadow: 2px 4px 10px 0 rgba(233, 233, 233, 0.3);
+  border: 4px solid var(--text-primary);
+  box-shadow: 2px 4px 10px 0 rgba(233, 233, 233, 0.87);
 }
 
 .card__image {
@@ -35,12 +35,14 @@
   margin: 0;
   font-weight: bold;
   font-size: 16px;
+  color: var(--text-primary);
 }
 
 .card__description {
   margin: 0;
   padding: 0;
   font-size: 12px;
+  color: var(--text-primary);
 }
 
 .card__control {
@@ -48,11 +50,11 @@
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  color: yellow;
+  color: var(--btn);
 }
 
 .card__coin {
-  color: white;
+  color: var(--text-primary);
 }
 
 .card__btn {
@@ -60,14 +62,16 @@
   padding: 5px 20px;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: yellow;
+  background-color: var(--btn);
   color: black;
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 .card__btn:hover,
-.card__btn:focus-visible {
-  background-color: rgb(15, 15, 15);
-  border: 1px solid yellow;
-  color: yellow;
+.card__btn:focus-visible,
+.card__btn:focus {
+  background: linear-gradient(135deg, var(--btn) 0%, var(--btn-hover) 100%);
+  transform: translateY(-2px);
+  border-color: #333;
 }

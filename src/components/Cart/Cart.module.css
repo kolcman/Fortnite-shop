@@ -8,10 +8,10 @@
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 8px;
-  background-color: yellow;
+  background-color: var(--btn);
   transition: all 0.3s ease-in;
 }
 
 .cart:hover {
-  background-color: rgb(192, 192, 0);
+  background: linear-gradient(135deg, var(--btn) 0%, var(--btn-hover) 100%);
 }
